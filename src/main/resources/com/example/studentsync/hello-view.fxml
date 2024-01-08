@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="600.0" maxWidth="450.0" minHeight="526.0" minWidth="450.0" prefHeight="550.0" prefWidth="450.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentsync.controllers.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <ImageView id="icon" fitHeight="342.0" fitWidth="342.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@icons/bothWhiteBG.png" />
+        </image>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></ImageView>
+    <HBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="410.0" spacing="20.0">
+        <children>
+            <Button id="loginButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchSceneToLogin" prefWidth="180.0" style="-fx-background-color: #004aad;" text="LOG IN" textAlignment="CENTER" textFill="#fcfcfc">
+                <font>
+                    <Font name="Kollektif Bold" size="35.0" />
+                </font>
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets></Button>
+            <Button id="signButton" mnemonicParsing="false" onAction="#switchSceneToSignIn" prefWidth="180.0" style="-fx-background-color: #004aad;" text="SIGN IN" textFill="WHITE">
+                <font>
+                    <Font name="Kollektif Bold" size="35.0" />
+                </font>
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+            </Button>
+        </children>
+    </HBox>
+</VBox>
